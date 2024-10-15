@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://cdn.staticfile.org/react/18.2.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/18.2.0/umd/react-dom.development.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script>
+/**
+ * React.createElement
+ * - 用来创建一个React元素
+ * - 参数
+ *      1、元素的名称（html标签，必须小写）
+ *      2、标签中的属性,在设置事件时，属性名需改成驼峰命名法
+ *      3、元素的内容（子元素）
+ * - 注意点：
+ *      React元素最终会通过虚拟DOM转换为真实的DOM元素
+ *      React元素一旦创建就无法修改，只能通过新创建元素去替换
+ *      修改React元素后必须对根元素重新渲染
+ */
+//3个参数 1、元素名 必须小写 2、元素中的属性  3、元素的子元素或内容
+//const root = document.getElementById('root');
+
+const button = React.createElement('button',{id:'btn',type:'button',onClick:()=>{alert('1111111')}},'点我一下');
+const div = React.createElement('div',{},'我是react创建的元素',button);  //创建一个react元素
+
+
+//获取根元素对应的React元素
+//ReactDOM.createRoot  需要一个dom元素作为参数
+const root= ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(div);
+
+</script>
+</body>
+</html>
