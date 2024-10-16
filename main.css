@@ -1,3 +1,9 @@
+@media screen and (max-width: 480px) {
+    body {
+        background-color: rgb(127, 93, 221);
+    }
+}
+
 .btn
 {
     position: relative;
