@@ -8,6 +8,19 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src="https://cdn.staticfile.org/react/18.2.0/umd/react.development.js"></script>
     <script src="https://cdn.staticfile.org/react-dom/18.2.0/umd/react-dom.development.js"></script>
+    <style>
+        .btn
+        {
+            position: relative;
+            background-color: #409eff;
+            color: #fff;
+            width: 100px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
 <div id="root"></div>
@@ -27,7 +40,7 @@
 //3个参数 1、元素名 必须小写 2、元素中的属性  3、元素的子元素或内容
 //const root = document.getElementById('root');
 
-const button = React.createElement('button',{id:'btn',type:'button',onClick:()=>{alert('1111111')}},'点我一下');
+const button = React.createElement('button',{id:'btn',type:'button',className:'btn',onClick:()=>{alert('1111111')}},'点我一下');
 const div = React.createElement('div',{},'我是react创建的元素',button);  //创建一个react元素
 
 
