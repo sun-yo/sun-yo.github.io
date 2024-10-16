@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     border:0;
-    transform: skew(-20px);
+    transform: skew(-20deg);
     border-radius: 15px 0;
 }
 
