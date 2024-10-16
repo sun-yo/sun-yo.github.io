@@ -1,0 +1,11 @@
+.btn
+        {
+            position: relative;
+            background-color: #409eff;
+            color: #fff;
+            width: 100px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
