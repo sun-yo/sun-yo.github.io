@@ -10,6 +10,7 @@
     align-items: center;
     border:0;
     transform: skew(-20px);
+    border-radius: 15px 0;
 }
 
 .btn::before,.btn::after
